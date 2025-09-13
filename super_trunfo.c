@@ -1,6 +1,6 @@
 #include <stdio.h> //Habilita a biblioteca no programa
 
-int main(){ //Inicia do programa
+int main(){ //Inicia o programa
     int populacao1, pontosturisticos1, populacao2, pontosturisticos2; //Declaração das váriáveis do tipo int
     float area1, pib1, area2, pib2; //Declaração das váriáveis do tipo float
     char estado1[50], codigodacarta1[5], nomedacidade1[50], estado2[50], codigodacarta2[5], nomedacidade2[50]; //Declaração das váriáveis do tipo char
