@@ -10,17 +10,19 @@ int main(){
     Pós-Decremento a--
     */
 
-    int numero1 = 1;
+    int numero1 = 1, resultado;
 
     printf("Antes do incremento: %d \n", numero1);
 
     numero1++; //numero1 +1
-
     printf("Após o incremento: %d \n", numero1);
 
     numero1--; //numero1 -1
-
     printf("Após o decremento: %d \n", numero1);
+
+    resultado = numero1++;
+    printf("Após o pós-incremento - Número 1: %d - Resultado: %d \n", numero1, resultado);
+
 
 
 
