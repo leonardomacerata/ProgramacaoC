@@ -16,5 +16,9 @@ int main(){
 
     //resultado = resultado + 20
     resultado += 20;
-    prinf("Resultado Atribuição copm Soma: %d \n", resultado);
+    printf("Resultado Atribuição com Soma: %d \n", resultado);
+
+    //resultado = resultado - numero1
+    resultado -= numero1;
+    printf("Resultado Atribuição com Subtração: %d \n", resultado);
 }
