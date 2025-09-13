@@ -13,6 +13,7 @@ int main(){
     int numero1 = 10, numero2, resultado;
     
     resultado = 10;
+    printf("Resultado: %d \n", resultado);
 
     //resultado = resultado + 20
     resultado += 20;
@@ -29,5 +30,5 @@ int main(){
     //resultado = resultado / 2
     resultado /= 2;
     printf("Resultado Atribuição com Divisão: %d \n", resultado);
-    
+
 }
