@@ -14,11 +14,11 @@ int main(){
 
     printf("Antes do incremento: %d \n", numero1);
 
-    numero1++;
+    numero1++; //numero1 +1
 
     printf("Após o incremento: %d \n", numero1);
 
-    numero1--;
+    numero1--; //numero1 -1
 
     printf("Após o decremento: %d \n", numero1);
 
