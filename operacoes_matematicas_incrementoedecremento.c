@@ -18,5 +18,12 @@ int main(){
 
     printf("Após o incremento: %d \n", numero1);
 
+    numero1--;
+
+    printf("Após o decremento: %d \n", numero1);
+
+
+
+
 
 }
