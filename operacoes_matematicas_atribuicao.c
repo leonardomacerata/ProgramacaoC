@@ -10,7 +10,11 @@ int main(){
     Atribuição com Divisão (/=)
     */
 
-    int numero1, numero2, resultado;
+    int numero1 = 10, numero2, resultado;
     
+    resultado = 10;
 
+    //resultado = resultado + 20
+    resultado += 20;
+    prinf("Resultado Atribuição copm Soma: %d \n", resultado);
 }
