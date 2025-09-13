@@ -30,7 +30,7 @@ int main(){
     printf("Após o pós-decremento - Número 1: %d - Resultado: %d \n", numero1, resultado); //Pós decremento é a quantidade que foi subtraída do resultado, neste caso 2
 
     resultado = --numero1;
-    printf("Após o pré-decremento - Número 1: %d - Resultado: %d \n", numero1, resultado); //Pré decremento é o valor antes do decremento, neste caso 3
+    printf("Após o pré-decremento - Número 1: %d - Resultado: %d \n", numero1, resultado); //Pré decremento é o valor antes do decremento, neste caso 1
 
 
 
