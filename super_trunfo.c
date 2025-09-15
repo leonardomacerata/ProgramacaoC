@@ -44,7 +44,7 @@ int main(){ //Inicia o programa
     printf("Densidade Populacional: %.2f hab/km2 \n", densidadepopulacional1); //Imprime o resultado da variável densidadepopulacional, limitando a 2 casas decimais, e deixa o espaço de 1 linha
     
     pibpercapita1 = pib1 / (float) populacao1; //calcula o resultado para a variável 'pibpercapita'. Converte a variável 'populacao' de int para float, e deixa o espaço para 1 linha
-    printf("PIB per Capita: %.2f \n", pibpercapita1); //Imprime o resultado da variável densidadepopulacional, limitando a 2 casas decimais, e deixa o espaço de 1 linha
+    printf("PIB per Capita: %.2f reais \n", pibpercapita1); //Imprime o resultado da variável densidadepopulacional, limitando a 2 casas decimais, e deixa o espaço de 1 linha
 
     printf("\n"); // Espaço após imprimir os dados
 
