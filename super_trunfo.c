@@ -29,8 +29,8 @@ int main(){ //Inicia o programa
     printf("Código da Carta: %s \n", codigodacarta1); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("Nome da Cidade: %s \n", nomedacidade1); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("População: %d \n", populacao1); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
-    printf("Área: %.2f km2\n", area1); //Limita a variável a duas casa decimais. Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
-    printf("PIB: %.2f \n", pib1 ); //Limita a variável a duas casa decimais. Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
+    printf("Área: %.2f km2 \n", area1); //Limita a variável a duas casa decimais. Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
+    printf("PIB: %.2f reais \n", pib1 ); //Limita a variável a duas casa decimais. Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("Número de Pontos Turísticos: %d \n", pontosturisticos1 ); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     densidadepopulacional1 = (float) populacao1 / area1; //calcula o resultado para a variável 'densidadepopulacional'. Converte a variável 'populacao' de int para float, e deixa o espaço para 1 linha
     printf("Densidade Populacional: %.2f hab/km2 \n", densidadepopulacional1); //Imprime o resultado da variável densidadepopulacional, limitando a 2 casas decimais, e deixa o espaço de 1 linha
@@ -62,8 +62,8 @@ int main(){ //Inicia o programa
     printf("Código da Carta: %s \n", codigodacarta2); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("Nome da Cidade: %s \n", nomedacidade2); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("População: %d \n", populacao2); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
-    printf("Área: %.2f km2\n", area2); //Limita a variável a duas casa decimais. Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
-    printf("PIB: %.2f \n", pib2 ); //Limita a variável a duas casa decimais. Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
+    printf("Área: %.2f km2 \n", area2); //Limita a variável a duas casa decimais. Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
+    printf("PIB: %.2f reais \n", pib2 ); //Limita a variável a duas casa decimais. Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("Número de Pontos Turísticos: %d \n", pontosturisticos2 ); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     densidadepopulacional2 = (float) populacao2 / area2; //calcula o resultado para a variável 'densidadepopulacional'. Converte a variável 'populacao' de int para float, e deixa o espaço para 1 linha
     printf("Densidade Populacional: %.2f hab/km2 \n", densidadepopulacional2); //Imprime o resultado da variável densidadepopulacional, limitando a 2 casas decimais, e deixa o espaço de 1 linha
