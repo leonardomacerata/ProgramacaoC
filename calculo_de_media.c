@@ -2,7 +2,6 @@
 
 int main(){
     float nota1, nota2, nota3, media;
-
     printf("Cálculo de Média \n");
     printf("Digite a Nota 1: \n");
     scanf("%f", &nota1);
@@ -12,12 +11,5 @@ int main(){
     scanf("%f", &nota3);
     media = (nota1 + nota2 + nota3) / 3;
     printf("Média: %.1f \n", media);
-
-    
-    
-
-
-
-
     return 0;
 }
