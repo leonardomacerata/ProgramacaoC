@@ -32,7 +32,7 @@ int main(){
     resultado = --numero1;
     printf("Após o pré-decremento - Número 1: %d - Resultado: %d \n", numero1, resultado); //Pré decremento é o valor antes do decremento, neste caso 1
 
-
+    return 0;
 
 
 }
