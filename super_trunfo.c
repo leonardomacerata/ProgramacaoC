@@ -2,7 +2,7 @@
 
 int main(){ //Inicia o programa
     int populacao1, pontosturisticos1, populacao2, pontosturisticos2; //Declaração das váriáveis do tipo int
-    float area1, pib1, area2, pib2; //Declaração das váriáveis do tipo float
+    float area1, pib1, area2, pib2, densidadepopulacional1, pibpercapita1, densidadepopulacional2, pibpercapita2; //Declaração das váriáveis do tipo float
     char estado1[50], codigodacarta1[5], nomedacidade1[50], estado2[50], codigodacarta2[5], nomedacidade2[50]; //Declaração das váriáveis do tipo char
 
     // O usuário digita os dados para a carta 1
@@ -28,7 +28,7 @@ int main(){ //Inicia o programa
 
     printf("Digite o Número de Pontos Turísticos: \n"); //Imprime o texto e deixa o espaço de 1 linha
     scanf("%d", &pontosturisticos1); //Coleta e armazena na variável o que foi digitado pelo usuário
-
+   
     // Imprime os dados da carta 1
     printf("\n"); // Deixa o espaço de 1 linha antes de imprimir os dados
     printf("Carta 1: \n"); //Imprime o texto e deixa o espaço de 1 linha
@@ -39,6 +39,13 @@ int main(){ //Inicia o programa
     printf("Área: %.2f km2\n", area1); //Limita a variável a duas casa decimais. Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("PIB: %.2f \n", pib1 ); //Limita a variável a duas casa decimais. Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("Número de Pontos Turísticos: %d \n", pontosturisticos1 ); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
+    
+    densidadepopulacional1 = (float) populacao1 / area1; //calcula o resultado para a variável 'densidadepopulacional'. Converte a variável 'populacao' de int para float
+    printf("Densidade Populacional: %.2f hab/km2 \n", densidadepopulacional1); //Imprime o resultado da variável densidadepopulacional, limitando a 2 casas decimais, e deixa o espaço de 1 linha
+    
+    pibpercapita1 = pib1 / (float) populacao1; //calcula o resultado para a variável 'pibpercapita'. Converte a variável 'populacao' de int para float
+    printf("PIB per Capita: %.2f \n", pibpercapita1);
+
     printf("\n"); // Espaço após imprimir os dados
 
     // O usuário digita os dados para a carta 2
