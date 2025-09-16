@@ -17,7 +17,19 @@ unsigned int estoqueMinimoB = 2500;
 double valorTotalA;
 double valorTotalB;
 
-printf("Produto %s tem estoque %u e o valor unitário é %.2f \n", produtoA, estoqueA, valorA);
+int resultadoEstoqueA;
+int resultadoEstoqueB;
+
+//Exibir informações dos produtos
+printf("Produto %s tem estoque %u e o valor unitário é R$%.2f \n", produtoA, estoqueA, valorA);
+printf("Produto %s tem estoque %u e o valor unitário é R$%.2f \n", produtoB, estoqueB, valorB);
+
+//Comparações com o valor mínimo em estoque
+resultadoEstoqueA = estoqueA > estoqueMinimoA;
+resultadoEstoqueB = estoqueB > estoqueMinimoB;
+
+printf("O produto %s tem estoque mínimo %d \n", produtoA, resultadoEstoqueA);
+printf("O produto %s tem estoque mínimo %d \n", produtoB, resultadoEstoqueB);
 
 return 0;
 }
