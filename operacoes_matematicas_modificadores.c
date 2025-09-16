@@ -2,7 +2,8 @@
 
 int main(){
 
-    // long, short e unsigned
+    // long, short, signed e unsigned.
+    // signed é o padrão de todas as variáveis, ou seja, trabalha com números positivos e negativos.
 
     int numeronormal = 2147483647; // MAIOR valor de int = 2.147.483.647. MENOR valor de int = -2.147.483.648. Tamanho = 32 bits (4 bytes)
     long int numerogrande = 9223372036854775807; // MAIOR valor de long int = 9.223.372.036.854.775.807. MENOR valor de long int = -9.223.372.036.854.775.808. Tamanho = 64 bits (8 bytes). Em alguns sistemas, long int tem 32 bits (4 bytes) igual a int.
