@@ -2,8 +2,8 @@
 
 int main(){ //Inicia o programa
     int pontosturisticos1, pontosturisticos2; //Declaração das váriáveis do tipo int
-    unsigned int populacao1, populacao2;
-    float area1, pib1, area2, pib2, densidadepopulacional1, pibpercapita1, densidadepopulacional2, pibpercapita2; //Declaração das váriáveis do tipo float
+    unsigned int populacao1, populacao2; //Declaração das variáveis do tipo unsigned int
+    float area1, pib1, densidadepopulacional1, pibpercapita1, superpoder1, area2, pib2, densidadepopulacional2, pibpercapita2, superpoder2; //Declaração das váriáveis do tipo float
     char estado1[50], codigodacarta1[3], nomedacidade1[50], estado2[50], codigodacarta2[3], nomedacidade2[50]; //Declaração das váriáveis do tipo char
 
     // O usuário digita os dados para a carta 1
@@ -37,6 +37,8 @@ int main(){ //Inicia o programa
     printf("Densidade Populacional: %.2f hab/km2 \n", densidadepopulacional1); //Imprime o resultado da variável densidadepopulacional, limitando a 2 casas decimais, e deixa o espaço de 1 linha
     pibpercapita1 = pib1 / (float) populacao1; //calcula o resultado para a variável 'pibpercapita'. Converte a variável 'populacao' de int para float, e deixa o espaço para 1 linha
     printf("PIB per Capita: %.2f reais \n", pibpercapita1); //Imprime o resultado da variável densidadepopulacional, limitando a 2 casas decimais, e deixa o espaço de 1 linha
+    superpoder1 = (float) populacao1 + area1 + pib1 + (float) pontosturisticos1 + pibpercapita1 + (1/densidadepopulacional1);
+    printf("Super Poder: %f \n", superpoder1);
     printf("\n"); // Espaço após imprimir os dados
 
     // O usuário digita os dados para a carta 2
