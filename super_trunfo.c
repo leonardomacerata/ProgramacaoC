@@ -1,9 +1,10 @@
 #include <stdio.h> //Habilita a biblioteca no programa
 
 int main(){ //Inicia o programa
-    int populacao1, pontosturisticos1, populacao2, pontosturisticos2; //Declaração das váriáveis do tipo int
+    int pontosturisticos1, pontosturisticos2; //Declaração das váriáveis do tipo int
+    unsigned int populacao1, populacao2;
     float area1, pib1, area2, pib2, densidadepopulacional1, pibpercapita1, densidadepopulacional2, pibpercapita2; //Declaração das váriáveis do tipo float
-    char estado1[50], codigodacarta1[5], nomedacidade1[50], estado2[50], codigodacarta2[5], nomedacidade2[50]; //Declaração das váriáveis do tipo char
+    char estado1[50], codigodacarta1[3], nomedacidade1[50], estado2[50], codigodacarta2[3], nomedacidade2[50]; //Declaração das váriáveis do tipo char
 
     // O usuário digita os dados para a carta 1
     printf("Carta 1: \n"); //Imprime o texto e deixa o espaço de 1 linha
@@ -14,7 +15,7 @@ int main(){ //Inicia o programa
     printf("Digite o Nome da Cidade: \n"); //Imprime o texto e deixa o espaço de 1 linha
     scanf("%s", &nomedacidade1); //Coleta e armazena na variável o que foi digitado pelo usuário
     printf("Digite a População: \n"); //Imprime o texto e deixa o espaço de 1 linha
-    scanf("%d", &populacao1); //Coleta e armazena na variável o que foi digitado pelo usuário
+    scanf("%u", &populacao1); //Coleta e armazena na variável o que foi digitado pelo usuário
     printf("Digite a Área (em km2): \n"); //Imprime o texto e deixa o espaço de 1 linha
     scanf("%f", &area1); //Coleta e armazena na variável o que foi digitado pelo usuário
     printf("Digite o PIB: \n"); //Imprime o texto e deixa o espaço de 1 linha
@@ -28,7 +29,7 @@ int main(){ //Inicia o programa
     printf("Estado: %s \n", estado1); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("Código da Carta: %s \n", codigodacarta1); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("Nome da Cidade: %s \n", nomedacidade1); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
-    printf("População: %d \n", populacao1); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
+    printf("População: %u \n", populacao1); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("Área: %.2f km2 \n", area1); //Limita a variável a duas casa decimais. Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("PIB: %.2f reais \n", pib1 ); //Limita a variável a duas casa decimais. Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("Número de Pontos Turísticos: %d \n", pontosturisticos1 ); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
@@ -47,7 +48,7 @@ int main(){ //Inicia o programa
     printf("Digite o Nome da Cidade: \n"); //Imprime o texto e deixa o espaço de 1 linha
     scanf("%s", &nomedacidade2); //Coleta e armazena na variável o que foi digitado pelo usuário
     printf("Digite a População: \n"); //Imprime o texto e deixa o espaço de 1 linha
-    scanf("%d", &populacao2); //Coleta e armazena na variável o que foi digitado pelo usuário
+    scanf("%u", &populacao2); //Coleta e armazena na variável o que foi digitado pelo usuário
     printf("Digite a Área (em km2): \n"); //Imprime o texto e deixa o espaço de 1 linha
     scanf("%f", &area2); //Coleta e armazena na variável o que foi digitado pelo usuário
     printf("Digite o PIB: \n"); //Imprime o texto e deixa o espaço de 1 linha
@@ -61,7 +62,7 @@ int main(){ //Inicia o programa
     printf("Estado: %s \n", estado2); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("Código da Carta: %s \n", codigodacarta2); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("Nome da Cidade: %s \n", nomedacidade2); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
-    printf("População: %d \n", populacao2); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
+    printf("População: %u \n", populacao2); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("Área: %.2f km2 \n", area2); //Limita a variável a duas casa decimais. Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("PIB: %.2f reais \n", pib2 ); //Limita a variável a duas casa decimais. Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
     printf("Número de Pontos Turísticos: %d \n", pontosturisticos2 ); //Imprime o texto e os dados da variável que foi digitado pelo usuário, e deixa o espaço de 1 linha
