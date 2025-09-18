@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-float temperatura = 25.0;
+float temperatura = 26.0;
 
 int main(){
 
      
-        if (temperatura > 26.0){
+        if (temperatura > 25.0){
         
         printf("Está calor.\n");
         printf("Ligue o ventilador.\n");
