@@ -31,6 +31,7 @@ int main(){
         break;
     
     default:
+        printf("Opção inválida. Digite uma opção válida.\n");
         break;
     }
 
