@@ -11,7 +11,6 @@ int main(){ //Inicia o programa
     printf("Instruções e Regras: \n");
     printf("1- Digite todos os dados para as duas cartas. \n");
     printf("2- Veja o resultado em Comparações das Cartas. \n");
-    printf("2.1- Se o resultado for 1, então a Carta 1 vence. Se o resultado for 0, então a Carta 2 vence. \n");
     printf("\n"); //Espaço de 1 linha
 
     //O usuário digita os dados para a carta 1
@@ -86,7 +85,12 @@ int main(){ //Inicia o programa
     //Comparação das cartas
     printf("\n"); //Espaço de 1 linha
     printf("*** Comparação das Cartas *** \n");
-    printf("População: %d \n", populacao1 > populacao2); //Compara se o dado da carta 1 é maior do que o dado da carta 2.
+    if (populacao1 > populacao2){ //Compara se o dado da carta 1 é maior do que o dado da carta 2.
+        printf("População: Carta 1 venceu. \n"); //Se sim, então Imprime o texo.
+    } else {
+        printf("População: Carta 2 venceu. \n"); //Se não, então Imprime o texo.
+    }
+    
     printf("Área: %d \n", area1 > area2); //Compara se o dado da carta 1 é maior do que o dado da carta 2.
     printf("PIB: %d \n", pib1 > pib2); //Compara se o dado da carta 1 é maior do que o dado da carta 2.
     printf("Pontos Turísticos: %d \n", pontosturisticos1 > pontosturisticos2); //Compara se o dado da carta 1 é maior do que o dado da carta 2.
