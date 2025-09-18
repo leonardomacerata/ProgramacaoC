@@ -4,7 +4,7 @@ int numero = 4, resultado;
 
 int main (){
 
-    resultado = numero % 2; // % é um operador de divisão que verifica se resultado da operação. Retona 0 ou 1. 0 se a o resultado da divisão for inteiro. 1 de o resultado for decimal (tiver resto)
+    resultado = numero % 2; // % é um operador de divisão que verifica o resultado da operação, retonando 0 ou 1. 0 se o resultado for inteiro. 1 se o resultado for decimal (tiver resto)
     
     printf("O resultado é: %d \n", resultado);
 
