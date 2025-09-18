@@ -11,6 +11,7 @@ int main(){ //Inicia o programa
     printf("Instruções e Regras: \n");
     printf("1- Digite todos os dados para as duas cartas. \n");
     printf("2- Veja o resultado em Comparações das Cartas. \n");
+    printf("2.1- A carta com o maior valor vence, com exceção do dado Densidade Populacional, onde o menor valor vence. \n");
     printf("\n"); //Espaço de 1 linha
 
     //O usuário digita os dados para a carta 1
@@ -126,15 +127,6 @@ int main(){ //Inicia o programa
     } else {
         printf("Super Poder: Carta 2 venceu. \n"); //Se não, então Imprime o texo.
     }
-
-    
-    //printf("Área: %d \n", area1 > area2); //Compara se o dado da carta 1 é maior do que o dado da carta 2.
-    //printf("PIB: %d \n", pib1 > pib2); //Compara se o dado da carta 1 é maior do que o dado da carta 2.
-    //printf("Pontos Turísticos: %d \n", pontosturisticos1 > pontosturisticos2); //Compara se o dado da carta 1 é maior do que o dado da carta 2.
-    //printf("Densidade Populacional: %d \n", densidadepopulacional1 < densidadepopulacional2); //Compara se o dado da carta 1 é menor do que o dado da carta 2.
-    //printf("PIB per Capita: %d \n", pibpercapita1 > pibpercapita2); //Compara se o dado da carta 1 é maior do que o dado da carta 2.
-    //printf("Super Poder: %d \n", superpoder1 > superpoder2); //Compara se o dado da carta 1 é maior do que o dado da carta 2.
-    //printf("\n"); //Espaço de 1 linha
 
     return 0; //Finaliza o programa
 }
