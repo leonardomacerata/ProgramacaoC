@@ -9,7 +9,7 @@ int main (){
     printf("O resultado é: %d \n", resultado);
 
     if (resultado == 0){
-        printf("O número é par");
+        printf("O número é par \n");
     }
 
     return 0;
