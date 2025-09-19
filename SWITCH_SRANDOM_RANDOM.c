@@ -17,7 +17,17 @@ int main(){
     {
     case 1:
         srand(time(0)); //Iniciliza o contador (timer)
-        numerosecreto = rand() % 10; //Divide a parte decimal (resto) do contador (timer) por 10. O resultado é um dígito de 0 a 9
+        numerosecreto = rand() % 10; //Divide a parte decimal (resto) do contador (timer) por 10. O resultado é um número de 0 a 9
+        printf("Digite um número de 0 a 9: \n");
+        scanf("%d", &palpite);
+        if (numerosecreto == palpite)
+        {
+            printf("Você acertou!\n");
+        } else {
+            printf("Você errou./n");
+        }
+        
+        //printf("Número Secreto: %d \n", numerosecreto);
         break;
 
     case 2:
