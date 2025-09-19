@@ -4,7 +4,7 @@
 
 int main(){
 
-    int opcao, numerosecret, palpite;
+    int opcao, numerosecreto, palpite;
  
     printf("Menu Principal\n");
     printf("1 - Iniciar Jogo\n");
@@ -16,7 +16,8 @@ int main(){
     switch (opcao)
     {
     case 1:
-        /* code */
+        srand(time(0)); //Iniciliza o contador (timer)
+        numerosecreto = rand() % 10; //Divide a parte decimal (resto) do contador (timer) por 10. O resultado é um dígito de 0 a 9
         break;
 
     case 2:
