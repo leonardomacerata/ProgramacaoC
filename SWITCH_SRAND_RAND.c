@@ -16,8 +16,9 @@ int main(){
     switch (opcao)
     {
     case 1:
-        srand(time(0)); //Iniciliza o contador (timer)
-        numerosecreto = rand() % 10; //Divide a parte decimal (resto) do contador (timer) por 10. O resultado é um número de 0 a 9
+        srand(time(0)); //Iniciliza o contador (timer) do menor valor que é 0
+        numerosecreto = rand() % 10; //O resultado será um número entre 0 a 9 (10 números possíveis). Para 9 números possíveis, de 0 a 8, o comando seria: rand() % 9
+        // Para números de 1 a 9, por exemplo, o comando seria: rand() % 10 + 1
         printf("Digite um número de 0 a 9: \n");
         scanf("%d", &palpite);
         if (numerosecreto == palpite)
