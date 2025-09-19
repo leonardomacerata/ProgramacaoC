@@ -24,10 +24,10 @@ int main(){
         {
             printf("Você acertou!\n");
         } else {
-            printf("Você errou./n");
+            printf("Você errou.\n");
         }
         
-        //printf("Número Secreto: %d \n", numerosecreto);
+        printf("O número secreto é: %d \n", numerosecreto);
         break;
 
     case 2:
