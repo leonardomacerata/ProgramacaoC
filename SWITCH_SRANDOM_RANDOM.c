@@ -31,11 +31,11 @@ int main(){
         break;
 
     case 2:
-        /* code */
+        printf("As regras são....\n");
         break;
 
     case 3:
-        /* code */
+        printf("Saindo do Jogo.\n");
         break;
     
     default:
