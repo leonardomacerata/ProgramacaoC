@@ -1,7 +1,7 @@
 #include <stdio.h> //Habilita a biblioteca no programa
 
 int main(){ //Inicia o programa
-    int pontosturisticos1, pontosturisticos2; //Declaração das váriáveis do tipo int
+    int pontosturisticos1, pontosturisticos2, dado; //Declaração das váriáveis do tipo int
     unsigned int populacao1, populacao2; //Declaração das variáveis do tipo unsigned int
     float area1, pib1, densidadepopulacional1, pibpercapita1, superpoder1, area2, pib2, densidadepopulacional2, pibpercapita2, superpoder2; //Declaração das váriáveis do tipo float
     char estado1[50], codigodacarta1[3], nomedacidade1[50], estado2[50], codigodacarta2[3], nomedacidade2[50]; //Declaração das váriáveis do tipo char
@@ -82,51 +82,81 @@ int main(){ //Inicia o programa
     printf("PIB per Capita: R$%.2f \n", pibpercapita2); //Imprime o resultado da variável densidadepopulacional, limitando a 2 casas decimais, e deixa o espaço de 1 linha
     superpoder2 = (float) populacao2 + area2 + pib2 + (float) pontosturisticos2 + pibpercapita2 + (1/densidadepopulacional2); //Modifica as variáveis int e unsigned int para float. Calcula o inverso da densidade populacional. Soma todos os valores. Deixa 1 linha de espaço.
     printf("Super Poder: %f \n", superpoder2); //Imprime o resultado da variável superpoder e deixa uma linha de espaço.
+    printf("\n");
+
+    //Escolha do dado a ser comparado
+    printf("Escolha qual dado você quer utilizar.\n");
+    printf("1 - População.\n");
+    printf("2 - Área.\n");
+    printf("3 - PIB.\n");
+    printf("4 - Pontos Turísticos.\n");
+    printf("5 - Densidade Populacional.\n");
+    printf("6 - PIB per Capita.\n");
+    printf("7 - Super Poder.\n");
+    scanf("%d", &dado);
 
     //Comparação das cartas
-    printf("\n"); //Espaço de 1 linha
-    printf("*** Comparação das Cartas *** \n");
-    if (populacao1 > populacao2){ //Compara se o dado da carta 1 é maior do que o dado da carta 2.
-        printf("População: Carta 1 venceu. \n"); //Se sim, então Imprime o texo.
-    } else {
-        printf("População: Carta 2 venceu. \n"); //Se não, então Imprime o texo.
+    switch (dado)
+    {
+    case 1:
+        if (populacao1 > populacao2){ //Compara se o dado da carta 1 é maior do que o dado da carta 2.
+            printf("Carta 1 - População: %u \n", populacao1);
+            printf("Carta 2 - População: %u \n", populacao2);
+            printf("População: Carta 1 venceu! \n"); //Se sim, então Imprime o texo.
+    }   else if (populacao1 == populacao2){
+        printf("Carta 1 - População: %u \n", populacao1);
+        printf("Carta 2 - População: %u \n", populacao2);
+        printf("População: Empate! \n"); //Se não, então Imprime o texo.
+    }   else {
+        printf("Carta 1 - População: %u \n", populacao1);
+        printf("Carta 2 - População: %u \n", populacao2);
+        printf("População: Carta 2 venceu!. \n");
     }
-
-    if (area1 > area2){ //Compara se o dado da carta 1 é maior do que o dado da carta 2.
-        printf("Área: Carta 1 venceu. \n"); //Se sim, então Imprime o texo.
-    } else {
-        printf("Área: Carta 2 venceu. \n"); //Se não, então Imprime o texo.
+        break;
     }
+   
     
-    if (pib1 > pib2){ //Compara se o dado da carta 1 é maior do que o dado da carta 2.
-        printf("PIB: Carta 1 venceu. \n"); //Se sim, então Imprime o texo.
-    } else {
-        printf("PIB: Carta 2 venceu. \n"); //Se não, então Imprime o texo.
-    }
-
-    if (pontosturisticos1 > pontosturisticos2){ //Compara se o dado da carta 1 é maior do que o dado da carta 2.
-        printf("Pontos Turísticos: Carta 1 venceu. \n"); //Se sim, então Imprime o texo.
-    } else {
-        printf("Pontos Turísticos: Carta 2 venceu. \n"); //Se não, então Imprime o texo.
-    }
-
-    if (densidadepopulacional1 < densidadepopulacional2){ //Compara se o dado da carta 1 é maior do que o dado da carta 2.
-        printf("Densidade Populacional: Carta 1 venceu. \n"); //Se sim, então Imprime o texo.
-    } else {
-        printf("Densidade Populacional: Carta 2 venceu. \n"); //Se não, então Imprime o texo.
-    }
-
-    if (pibpercapita1 > pibpercapita2){ //Compara se o dado da carta 1 é maior do que o dado da carta 2.
-        printf("PIB per Capita: Carta 1 venceu. \n"); //Se sim, então Imprime o texo.
-    } else {
-        printf("PIB per Capita: Carta 2 venceu. \n"); //Se não, então Imprime o texo.
-    }
-
-     if (superpoder1 > superpoder2){ //Compara se o dado da carta 1 é maior do que o dado da carta 2.
-        printf("Super Poder: Carta 1 venceu. \n"); //Se sim, então Imprime o texo.
-    } else {
-        printf("Super Poder: Carta 2 venceu. \n"); //Se não, então Imprime o texo.
-    }
+    // if (populacao1 > populacao2){ //Compara se o dado da carta 1 é maior do que o dado da carta 2.
+    //     printf("População: Carta 1 venceu. \n"); //Se sim, então Imprime o texo.
+    // } else {
+    //     printf("População: Carta 2 venceu. \n"); //Se não, então Imprime o texo.
+    // }
+	// 
+    // if (area1 > area2){ //Compara se o dado da carta 1 é maior do que o dado da carta 2.
+    //     printf("Área: Carta 1 venceu. \n"); //Se sim, então Imprime o texo.
+    // } else {
+    //     printf("Área: Carta 2 venceu. \n"); //Se não, então Imprime o texo.
+    // }
+    // 
+    // if (pib1 > pib2){ //Compara se o dado da carta 1 é maior do que o dado da carta 2.
+    //     printf("PIB: Carta 1 venceu. \n"); //Se sim, então Imprime o texo.
+    // } else {
+    //     printf("PIB: Carta 2 venceu. \n"); //Se não, então Imprime o texo.
+    // }
+	// 
+    // if (pontosturisticos1 > pontosturisticos2){ //Compara se o dado da carta 1 é maior do que o dado da carta 2.
+    //     printf("Pontos Turísticos: Carta 1 venceu. \n"); //Se sim, então Imprime o texo.
+    // } else {
+    //     printf("Pontos Turísticos: Carta 2 venceu. \n"); //Se não, então Imprime o texo.
+    // }
+	// 
+    // if (densidadepopulacional1 < densidadepopulacional2){ //Compara se o dado da carta 1 é maior do que o dado da carta 2.
+    //     printf("Densidade Populacional: Carta 1 venceu. \n"); //Se sim, então Imprime o texo.
+    // } else {
+    //     printf("Densidade Populacional: Carta 2 venceu. \n"); //Se não, então Imprime o texo.
+    // }
+	// 
+    // if (pibpercapita1 > pibpercapita2){ //Compara se o dado da carta 1 é maior do que o dado da carta 2.
+    //     printf("PIB per Capita: Carta 1 venceu. \n"); //Se sim, então Imprime o texo.
+    // } else {
+    //     printf("PIB per Capita: Carta 2 venceu. \n"); //Se não, então Imprime o texo.
+    // }
+	// 
+    //  if (superpoder1 > superpoder2){ //Compara se o dado da carta 1 é maior do que o dado da carta 2.
+    //     printf("Super Poder: Carta 1 venceu. \n"); //Se sim, então Imprime o texo.
+    // } else {
+    //     printf("Super Poder: Carta 2 venceu. \n"); //Se não, então Imprime o texo.
+    // }
 
     return 0; //Finaliza o programa
 }
