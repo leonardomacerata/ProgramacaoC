@@ -2,7 +2,7 @@
 
 int main(){
 
-    int i = 1, rainha = 1;
+    int i = 1, j = 1;
 
     printf("Movimentar a Torre 5 casas para a direita: \n");
     for (int i = 1; i <= 5; i++)
@@ -25,9 +25,9 @@ int main(){
     printf("Movimentar a Rainha 8 casas para esquerda: \n");
     do
     {
-        printf("Rainha se movimentou 1 casa para esquerda.\n", rainha);
-        rainha++;
-    } while (rainha <= 8);
+        printf("Rainha se movimentou 1 casa para esquerda.\n", j);
+        j++;
+    } while (j <= 8);
     
     printf("\n\n");
     
