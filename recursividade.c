@@ -4,6 +4,8 @@
 // Recursividade é uma técnica que pode ser usada para substituir loops, dividir problemas complexos em partes menores e simplificar a lógica de muitos algoritmos.
 // Procedimentos são blocos de código para realizar uma tarefa específica. MAIN e VOID são procedimentos.
 
+// CONTAGEM REGRESSIVA DE 10 ATÉ 1
+
 void recursivo(int numero){ //PROCEDIMENTO
     if (numero > 0)
     {
