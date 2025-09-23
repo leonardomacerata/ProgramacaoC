@@ -4,7 +4,7 @@ void moverTorre(int casas){
     if (casas > 0)
     {
         printf("Torre se movimentou 1 casa para direita. \n");
-        recursivo(casas - 1);
+        moverTorre(casas - 1);
     }
 }
 
@@ -13,18 +13,21 @@ void moverBispo(int casas){
     {
         printf("Bispo se movimentou 1 casa para cima.\n");
         printf("Bispo se movimentou 1 casa para direita. \n");
-        recursivo(casas - 1);
+        moverBispo(casas - 1);
     }
 }
 
 int main(){
 
-   printf("Movimentar a Torre 5 casas para a direita: \n");
-   moverTorre(5);
+    printf("Movimentar a Torre 5 casas para a direita: \n");
+    moverTorre(5);
 
-   printf("\n\n");
+    printf("\n\n");
 
-   printf("Movimentar o Bispo 5 casas na diagonal para cima e à direita: \n");
+    printf("Movimentar o Bispo 5 casas na diagonal para cima e à direita: \n");
+    moverBispo(5);
     
+    printf("\n\n");
+
     return 0;
 }
