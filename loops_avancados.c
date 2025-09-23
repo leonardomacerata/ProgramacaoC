@@ -3,6 +3,7 @@
 int main(){
 
     // É 1 único loop que pode conter múltiplas variáveis, condições múltiplas e atualizações complexas.
+    // Simplifica o programa, pois evita a complexidade de loops aninhados.
 
     for (int i = 0, j = 10; i < j; i++, j--)
     {
